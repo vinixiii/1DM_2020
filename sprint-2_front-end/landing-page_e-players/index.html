@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-players</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="top">
+        <div class="top-content">
+            <img src="images/Logo 1.svg" alt="">
+            <nav class="menu">
+                <ul class="topnav" id="my-topnav">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Resultados</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Login/Cadastro</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="menu-icon" onclick="responsiveMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <picture>
+                <source media="(max-width: 576px)" srcset="images/Banner576.jpg">
+                <source media="(max-width: 768px)" srcset="images/Banner768.jpg">
+                <source media="(max-width: 1200px)" srcset="images/Banner1200.jpg">
+                <source media="(max-width: 1440px)" srcset="images/Banner1440.jpg">
+                <img src="images/Banner1920.jpg" alt="">
+            </picture>
+            <div class="banner-position">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h1><span class="liga">Liga</span> E-Players</h1>
+                        <p>O maior portal de campeonatos online</p>
+                        <a href="#">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jogos">
+            <div class="jogos-content">
+                <ul>
+                    <li><a href="#"><img src="images/formula-1-logo-1-1 1.png" alt="Logo do Fórmula 1"></a></li>
+                    <li><a href="#"><img src="images/logo-lol-300x131 1.png" alt="Logo do League of Legends"></a></li>
+                    <li><a href="#"><img src="images/Counter-Strike-Logo-Transparent-PNG 1.png" alt="Logo do Counter Strike"></a></li>
+                    <li><a href="#"><img src="images/4bcd537b6c034e297f0030cf08887426 1.png" alt="Logo do Valorant"></a></li>
+                    <li><a href="#"><img src="images/800px-FIFA_series_logo 1.png" alt="Logo do fifa"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-angulation">
+                <div class="angulation"></div>
+            </div>
+            <div class="about-position">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Como participar das ligas?</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus iste doloribus earum cum tempore perspiciatis iusto error numquam incidunt saepe? Iusto vero hic autem sed sit voluptates minima incidunt doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident iusto dolores nam repellat. Eum, esse est. Nemo, quidem nulla!</p>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, mollitia porro maxime blanditiis eligendi sed consequuntur possimus accusamus unde, minima et odit aliquid facilis, consequatur voluptatem itaque eveniet voluptates doloribus?</p>
+                    </div>
+                    <img src="images/lol.png" alt="Herói loiro do League of Legends">
+                </div>
+            </div>
+        </section>
+
+        <section class="jogos"> <!--Partidas ao-vivo e em breve-->
+            <div class="jogos-content">
+                <div class="jogos-ao-vivo">
+                    <h2>Ao<br> vivo</h2>
+                    <div class="partida">
+                        <div class="time-1">
+                            <p>SK</p>
+                            <img src="images/SK 1.png" alt="Logo da SK">
+                        </div>
+                        <p>VS</p>
+                        <div class="time-2">
+                            <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                            <p>FLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha"></div>
+                <div class="jogos-em-breve">
+                    <h2>Em <br>breve</h2>
+                    <div class="partida">
+                        <div class="time-1">
+                            <p>SK</p>
+                            <img src="images/SK 1.png" alt="Logo da SK">
+                        </div>
+                        <p>VS</p>
+                        <div class="time-2">
+                            <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                            <p>FLA</p>
+                        </div>
+                    </div>
+                    <div class="partida">
+                        <div class="time-1">
+                            <p>SK</p>
+                            <img src="images/SK 1.png" alt="Logo da SK">
+                        </div>
+                        <p>VS</p>
+                        <div class="time-2">
+                            <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                            <p>FLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Fim de Partidas ao-vivo e em breve-->
+        
+        <section class="noticias">
+            <div class="noticias-container">
+                <div class="noticias-content">
+                    <h2>Notícias</h2>
+                    <div class="card-content">
+                        <div class="card">
+                            <img src="images/noticia1.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/noticia2.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/noticia3.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/noticia4.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div><div class="card">
+                            <img src="images/noticia5.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div><div class="card">
+                            <img src="images/noticia6.jpg" alt="#">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis aliquam rerum accusantium dolores fugiat saepe commodi eos quam sed velit ducimus ab voluptatem vero.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <h2>Próximas partidas</h2>
+                    <div class="proximas-partidas">
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                        <div class="proxima-partida">
+                            <div class="partida">
+                                <div class="time-1">
+                                    <p>SK</p>
+                                    <img src="images/SK 1.png" alt="Logo da SK">
+                                </div>
+                                <p>VS</p>
+                                <div class="time-2">
+                                    <img src="images/FLA 1.png" alt="Logo do Flamengo">
+                                    <p>FLA</p>
+                                </div>
+                            </div>
+                            <p class="data">1/12/2020 - 19h00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="links">
+                <div class="links-uteis">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li><a href="#">Regras de utilização</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="paginas">
+                    <h3>Páginas</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Campeonatos</a></li>
+                        <li><a href="#">Resultados</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Login/Cadastro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/Logo 1.svg" alt="Logo E-Players">
+            <div class="newsletter">
+                <p>Faça parte dessa tribo, receba notícias e pormoções!</p>
+                <div class="newsletter-email">
+                    <input name="email" placeholder="E-mail"/>
+                    <button type="submit">Cadastrar</button>
+                </div>
+                <p>Copyright &copy; 2020 - E-Players</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function responsiveMenu() {
+          var x = document.getElementById("my-topnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
+</html>

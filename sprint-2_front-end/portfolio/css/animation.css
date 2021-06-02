@@ -1,0 +1,17 @@
+@keyframes design {
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes html {
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes css {
+    to {
+        width: 70%;
+    }
+}

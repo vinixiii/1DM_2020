@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page - Curso de desenvolvimento de sistemas</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/86484b0d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="topo">
+            <nav>
+                <ul class="topnav" id="my-topnav">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Desafio</a></li>
+                    <li><a href="#">Endereço</a></li>
+                    <a href="javascript:void(0);" class="menu-icon" onclick="responsiveMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Início do banner -->
+        <div class="banner">
+            <div class="content alinhamento-inferior">
+                <div class="banner-text">
+                    <h1>Desenvolvimento de sistemas</h1>
+                    <p>SENAI Informática</p>
+                    <img src="images/mouse-down.png" alt="mouse com uma seta apontando para baixo">
+                </div>
+            </div>
+        </div>
+        <!-- Fim do banner -->
+        <div class="bk-sobre">
+            <section class="sobre">
+                <h2>Sobre os projetos</h2>
+                
+                <div class="conteudo-sobre">
+                    <img src="/Images/imagem-seção-sobre.jpg" alt="Homem apresentando um produto à um grupo de pessoas">
+                    <div class="texto-sobre">
+                        <h3><span class="tag">Participantes</span> <br> Mais de 80 alunos organizados em 16 grupos</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facere quos similique dolores id eos natus quasi ipsam excepturi accusantium cum dignissimos omnis aliquid sapiente reiciendis, qui nam vitae soluta.</p>
+                    </div>
+                </div>
+            </section>
+       </div>
+       <!-- Informações -->
+       <div class="bk-info">
+           <section class="info">
+               <div class="info-card">
+                    <h3>Local</h3>
+                    <p>São Paulo</p>
+               </div>
+               <div class="info-card">
+                    <h3>Duração</h3>
+                    <p>90 Dias</p>
+                </div>
+                <div class="info-card">
+                    <h3>Desafio</h3>
+                    <p>+30 Desafios</p>
+                </div>
+           </section>
+       </div>
+       <section class="endereco">
+           <div class="content alinhamento-central">
+               <div>
+                    <h2>Endereço</h2>
+                    <div class="texto-endereco">
+                        <p>Alameda Barão de Limeira, 539 <br>
+                        Santa Cecília, São Paulo - SP <br>
+                        CEP: 01202-001
+                        </p>
+                        <img src="./Images/mapa.png" alt="Mapa">
+                    </div>
+                </div>
+           </div>
+       </section>
+       <footer class="rodape">
+           <div class="content alinhamento-central">
+                <p>Copyright &copy; 2020 - Escola Senai de Informática</p>
+           </div>
+       </footer>
+       <a href="https://api.whatsapp.com/send?phone=5511985420000&text=Olá, gostaria de saber mais sobre os projetos!" target="_black"><img src="images/WhatsApp-icone-3.png" alt="Envie uma mensagem em nosso ZAP" class="zap"></a>
+
+       <script>
+        function responsiveMenu() {
+          var x = document.getElementById("my-topnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --background: #000000;
+    --red: #C31616;
+    --blue: #001f70;
+    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+
+    --font: 'Titillium Web', sans-serif;
+    --font2: 'Roboot', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--background);
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 5em;
+}
+
+.top-content {
+    width: min(90%, 75em);
+    max-width: 75em;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: wheat; */
+}
+
+.top img {
+    width: clamp(20em, 26vw, 21.25em);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68%;
+}
+
+.topnav {
+    width: 100%;
+    height: 5em;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav a{
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1.25em, 1.8vw, 1.5em);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 1.1em 0.5em;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    color: #ffffff;
+}
+
+/*Banner*/
+.banner {
+    width: 100%;
+    /* height: 37.5em; */
+
+    position: relative;
+}
+
+.banner img {
+    z-index: 5;
+}
+
+.banner-position {
+    width: 100%;
+    height: 100%;
+    /* background: rgba(153, 205, 50); */
+    position: absolute;
+    top: 0;
+}
+
+.banner-content{
+    width: min(90%, 75em);
+    max-width: 75em;
+    height: 100%;
+    /* background-color: rgba(222, 184, 135, 0.356); */
+
+    margin: auto;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-text{
+    width: 50%;
+    height: 100%;
+    /* background-color: chartreuse; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    padding: 0 0.5em;
+}
+
+.banner-text h1{
+    font-size: clamp(5em, 6.5vw, 5.625em);
+    -webkit-text-stroke: 2px #000000;
+}
+
+.liga {
+    text-transform: uppercase;
+}
+
+.banner-text p{
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+}
+
+.banner-text a{
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--red);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.banner-text a:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+/*Jogos*/
+.jogos{
+    width: 100%;
+    height: 7.5em;
+    /* background-color: chartreuse; */
+}
+
+.jogos-content {
+    width: min(90%, 75em);
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: #001f70; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+.jogos ul{
+    list-style-type: none;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jogos ul a:hover img{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+/*----------About----------*/
+.about {
+    width: 100%;
+    height: 31.25em;
+    background-color: var(--blue);
+
+    position: relative;
+}
+
+.about-angulation {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.angulation {
+    width: 100%;
+    height: 25em;
+    background-color: var(--background);
+    transform: skewY(-3deg);
+}
+
+.about-position {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+.about-content {
+    width: min(90%, 75em);
+    max-width: 75em;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--font2);
+}
+
+.about-text {
+    /* width: 55%; */
+    color: #ffffff;
+}
+
+.about-text h2 {
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+    margin-bottom: 0.5em;
+}
+
+.about-text p {
+    font-size: 1.125em; 
+    margin-bottom: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.about-content img {
+    width: clamp(28.125em, 34vw, 30em);
+    margin-left: 2em;
+}
+
+.jogos-ao-vivo, .jogos-em-breve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.jogos-ao-vivo h2, .jogos-em-breve h2 {
+    text-transform: uppercase;
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+}
+
+.linha {
+    height: 3em;
+    border:solid 1px #fff;
+    margin-right: 0.8em;
+}
+
+/* .jogos-ao-vivo::after {
+    content: '';
+    height: 2.666em;
+    border: 1px solid #ffffff;
+    margin: 0 1em;
+} */
+
+.partida {
+    width: 17.8125em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: yellow; */
+    margin-left: 0.8em;
+}
+
+.time-1, .time-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+}
+
+.time-1 img, .time-2 img {
+    width: clamp(1.625em, 2.1vw, 1.875em);
+}
+
+/*Notícias*/
+.noticias {
+    width: 100%;
+    background-color: #1E1C21;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticias-container {
+    width: min(90%, 75em);
+    /* background-color: aqua; */
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticias-content {
+    width: 70%;
+}
+
+.noticias-content h2 {
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+    padding: 0.9em 0;
+    font-weight: 700;
+}
+
+.card-content {
+    width: 100%; /*940px*/
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-weight: 400;
+}
+
+.card {
+    width: 14.8125em; /*237px*/
+    height: 22.75em; /*364px*/
+
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    
+    box-shadow: 1px 1px 20px 4px #000000;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.card h3 {
+    font-size: 1.125em;
+    padding: 0.3em 0.5em;
+}
+
+.card p {
+    padding: 0.5em;
+}
+
+/*Próximas partidas*/
+
+aside {
+    width: 20.5%;
+}
+
+aside h2 {
+    font-size: clamp(1.625em, 2.1vw, 1.875em);
+    padding: 0.9em 0;
+    font-weight: 700;
+}
+
+.proximas-partidas {
+    width: 100%;
+    height: 47.5em;
+
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+
+    box-shadow: 1px 1px 20px 4px #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-weight: 400;
+}
+
+.proxima-partida {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.proxima-partida + .proxima-partida {
+    padding-top: 0;
+}
+
+.proxima-partida p{
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.proxima-partida .partida {
+    width: 90%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.proxima-partida .partida img {
+    width: 39px;
+}
+
+.proxima-partida .partida p {
+    font-size: 20px;
+}
+
+.proxima-partida .time-1 img {
+    padding-left: 0.1em;
+}
+
+.proxima-partida .time-2 img {
+    padding-right: 0.1em;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 13.125em;
+    background-color: var(--background);
+}
+
+.footer-container {
+    width: min(90%, 75em);
+    max-width: 75em;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-container img {
+    max-width: 18.06em;
+}
+
+.links {
+    width: 21.5em;
+    height: 11.93;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links ul {
+    margin-top: 0.8em;
+}
+
+.links li {
+    margin-left: 1em;
+}
+
+.links li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.newsletter p {
+    margin: 0.9em 0;
+    text-align: center;
+}
+
+.newsletter-email {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsletter input {
+    width: 11.75em;
+    height: 2.25rem;
+
+    background: #ffffff;
+
+    color: #837c7c;
+}
+
+.newsletter button {
+    width: 11.75em;
+    height: 2.25rem;
+
+    background: #8326EF;
+}
+
+.newsletter button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 1200px) {
+    /*Menu*/
+    .top img {
+        width: clamp(16.25em, 26vw, 20em);
+    }
+
+    .menu a {
+        font-size: clamp(1.12em, 1.8vw, 1.3125em);
+    }
+
+    /*Banner*/
+    .banner-text h1 {
+        text-align: center;
+        font-size: clamp(4.375em, 6.5vw, 5em);
+    }
+
+    .banner-text p,
+    .banner-text a {
+    font-size: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    /*Jogos*/
+    .jogos-content img {
+        width: clamp(90%, 10vw, 100%);
+    }
+
+    /*About*/
+    .angulation {
+        width: 100%;
+        height: 28em;
+        background-color: var(--background);
+        transform: skewY(-2deg);
+    }
+
+    .about-content img {
+        width: clamp(25.625em, 30vw, 28.125em);
+    }
+
+    /*Partidas*/
+    .jogos-ao-vivo h2, .jogos-em-breve h2 {
+        font-size: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    .time-1, .time-2 {
+        font-size: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    .time-1 img,
+    .time-2 img {
+        width: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    .partida {
+        width: clamp(14.6em, 24vw, 17.8125em);
+    }
+
+    /*Noticias*/
+    .noticias-content h2 {
+        font-size: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    aside h2 {
+        font-size: clamp(1.375em, 2.1vw, 1.625em);
+    }
+
+    /*Footer*/
+    .footer-container img{
+        width: clamp(13em, 50vw, 18em);
+        margin: 0 1em;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: clamp(9.375em, 14vw, 11.75em);
+    }
+}
+
+@media (max-width: 1128px) {
+    .card-content div:nth-child(n+5):nth-child(-n+6) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) { /*Menu Responsivo - Fechado*/
+    .top-content img { /*Ajuste do logo*/
+        align-self: flex-start;
+        padding-top: 1.69em;
+    }
+    
+    .menu { /*Ajusta o ícone de barra no fim do menu*/
+        justify-content: flex-end;
+    }
+    
+    .menu a.menu-icon { /*Mostra o ícone de barras e ajusta a posição*/
+        display: initial;
+
+        padding: 1.6em 1em;
+    }
+
+    .topnav li { /*Esconde os itens da topnav*/
+        display: none;
+    }   
+
+    /*Customização de aparência*/
+    .menu a.menu-icon:hover { /*Com o mouse em cima*/
+        background-color: var(--red);
+        padding: 1.6em 1em;
+    }
+
+    .topnav li:hover { /*Com o mouse em cima*/
+        background-color: var(--red);
+        padding: 1.69em 0;
+    }
+}
+
+@media screen and (max-width: 992px) { /*Menu responsivo - Aberto*/
+    .top-content { /*Permite o ajsute do menu (100% do top-content)*/
+        position: relative;
+    }
+
+    .topnav.responsive { /*Ajusta o menu aberto*/
+        flex-direction: column;
+        align-items: unset;
+
+        height: auto;
+
+        position: absolute; /*Ajusta o tamanho do menu ao tamanho do top-content*/
+        top: 0; /*Encosta o elemento no topo*/
+        left: 0; /*Encosta o elemento à esquerda*/
+
+        z-index: 10; /*Aumenta o eixo Z em relação ao banner*/
+
+        margin-top: 5em; /*Deixa o menu abaixo do topo*/
+
+        background-color: var(--background);
+    }
+    
+    .topnav.responsive li {
+        display: block; /*Mostra os itens do menu*/
+        text-align: center;
+
+        height: auto;
+
+        padding: 1.69em 0; /*Define o espaçamento entre as li's*/
+    }
+
+    /*Customização*/
+    .topnav.responsive li:first-child { /*Primeira li*/
+        background-color: #a51212;
+    }
+
+    .topnav.responsive li:hover { /*Com o mouse em cima das li's*/
+        background-color: var(--red);
+        transition: all .3s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
